@@ -97,6 +97,7 @@ func HuggingFaceOrganizationApiToken() *config.Rule {
 		`os.environ['HUGGINGFACEHUB_API_TOKEN'] = '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'`,
 		fmt.Sprintf("api_org_%s", secrets.NewSecret(`[a-zA-Z]{34}`)),
 	}
+	`use_auth_token='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')`,
 	fps := []string{
 		`public static final String API_ORG_EXIST = "APIOrganizationExist";`,
 		`const api_org_controller = require('../../controllers/api/index').organizations;`,
@@ -111,5 +112,6 @@ func HuggingFaceOrganizationApiToken() *config.Rule {
 		You should see a token hf_xxxxx (old tokens are api_XXXXXXXX or api_org_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx).
 		If you do not submit your API token when sending requests to the API, you will not be able to run inference on your private models.`,
 	}
+	`use_auth_token='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')`,
 	return validate(r, tps, fps)
 }
