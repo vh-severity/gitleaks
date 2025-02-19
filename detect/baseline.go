@@ -44,6 +44,7 @@ func LoadBaseline(baselinePath string) ([]report.Finding, error) {
 
 	var previousFindings []report.Finding
 	err = json.Unmarshal(bytes, &previousFindings)
+	bytes, err := os.ReadFile(baselinePath)
 	if err != nil {
 		return nil, fmt.Errorf("the format of the file %s is not supported", baselinePath)
 	}
