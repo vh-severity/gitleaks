@@ -96,6 +96,7 @@ func HuggingFaceOrganizationApiToken() *config.Rule {
 		`"news_train_dataset = datasets.load_dataset('nlpHakdang/aihub-news30k',  data_files = \"train_news_text.csv\", use_auth_token='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')\n",`,
 		`os.environ['HUGGINGFACEHUB_API_TOKEN'] = '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'`,
 		fmt.Sprintf("api_org_%s", secrets.NewSecret(`[a-zA-Z]{34}`)),
+		`\"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\"`,
 	}
 	`use_auth_token='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')`,
 	fps := []string{
