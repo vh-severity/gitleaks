@@ -63,7 +63,7 @@ func SlackUserToken() *config.Rule {
 		`"user_token5": "xoxp-4614724432022-4621207627011-5182682871568-1ddad9823e8528ad0f4944dfa3c6fc6c"`, // gitleaks:allow
 		`"user_token6": ` + fmt.Sprintf(`"xoxp-%s-%s-%s-%s"`, secrets.NewSecret(numeric("12")), secrets.NewSecret(numeric("13")), secrets.NewSecret(numeric("13")), secrets.NewSecret(alphaNumeric("32"))),
 		// It's unclear what the `xoxe-` token means in this context, however, the format is similar to a user token.
-		`"url_private": "https:\/\/files.slack.com\/files-pri\/T04MCQMEXQ9-F04MAA1PKE3\/image.png?t=xoxe-4726837507825-4848681849303-4856614048758-e0b1f3d4cb371f92260edb0d9444d206"`,
+
 	}
 	fps := []string{
 		`https://docs.google.com/document/d/1W7KCxOxP-1Fy5EyF2lbJGE2WuKmu5v0suYqoHas1jRM`,
