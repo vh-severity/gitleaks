@@ -26,7 +26,6 @@ const (
 	// boundaries for the secret
 	// \x60 = `
 	secretPrefixUnique = `\b(`
-	secretPrefix       = `(?:'|\"|\s|=|\x60){0,5}(`
 	secretSuffix       = `)(?:['|\"|\n|\r|\s|\x60|;]|$)`
 )
 
